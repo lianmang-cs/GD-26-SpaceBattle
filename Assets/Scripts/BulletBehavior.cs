@@ -4,11 +4,10 @@ public class BulletBehavior : MonoBehaviour
 {
    public float speed; 
    
-   void Start() {
-    Destroy(gameObject); 
+   void Update() {
+    //shoot up
+    transform.position += transform.up * Time.deltaTime * speed; 
    }
-
-
 
    void OnTriggerEnter2D(Collider2D other) {
     //Destroy enemies tagged enemies

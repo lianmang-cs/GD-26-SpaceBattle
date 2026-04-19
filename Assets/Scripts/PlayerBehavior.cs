@@ -6,6 +6,8 @@ public class PlayerBehavior : MonoBehaviour
     public float speed; 
     public float min; 
     public float max; 
+    public BulletBehavior bullet; 
+    public Transform launchOff; 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -36,6 +38,13 @@ public class PlayerBehavior : MonoBehaviour
             newPos.x = min; 
         }
         transform.position = newPos; 
+
+        //Shooting
+        if (Keyboard.current.spaceKey.wasPressedThisFrame) {
+            Instantiate(bullet, launchOff.position, transform.rotation);
+
+        }
+
         
     }
 }
