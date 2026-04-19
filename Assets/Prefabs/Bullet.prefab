@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c7fa838719bd4dc4a8d1af83d18d07b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletBehavior
-  speed: 3
+  speed: 4
   AudioVolume: 1
   explosionAudio: {fileID: 8300000, guid: 46e9565d86c80494fb5dafb5ed8a49aa, type: 3}
 --- !u!70 &8774768287143222632
