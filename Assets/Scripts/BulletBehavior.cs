@@ -9,7 +9,7 @@ public class BulletBehavior : MonoBehaviour
     transform.position += transform.up * Time.deltaTime * speed; 
    }
 
-   void OnTriggerEnter2D(Collider2D other) {
+    void OnTriggerEnter2D(Collider2D other) {
     //Destroy enemies tagged enemies
     if(other.CompareTag("Enemy")) {
         Destroy(other.gameObject); //destroy enemies
