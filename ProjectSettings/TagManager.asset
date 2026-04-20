@@ -9,6 +9,7 @@ TagManager:
   - eBullet
   - BottomBorder
   - 'pBullet '
+  - PlayerT
   layers:
   - Default
   - TransparentFX
