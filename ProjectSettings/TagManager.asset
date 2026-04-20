@@ -6,6 +6,9 @@ TagManager:
   tags:
   - TopBorder
   - Enemy
+  - eBullet
+  - BottomBorder
+  - 'pBullet '
   layers:
   - Default
   - TransparentFX

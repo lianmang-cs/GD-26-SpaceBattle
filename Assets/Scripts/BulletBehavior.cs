@@ -21,17 +21,14 @@ public class BulletBehavior : MonoBehaviour
         Destroy(other.gameObject); //destroy enemies
         Destroy(gameObject); //destroy bullet
     }
-    //Destroy bullet if it hits the top
-    if(other.CompareTag("TopBorder")) {
-        Destroy(gameObject); //destroy bullet
-    }
     //Destroy player tagged player
-    if(other.CompareTag("Player")) {
+    else if(other.CompareTag("Player")) {
+        MenuBehaviour.instance.showGameOver(); //display game over
         Destroy(other.gameObject); //destroy player
         Destroy(gameObject); //destroy bullet
     }
-    //Destroy bullet if it hits the bottom
-    if(other.CompareTag("BottomBorder")) {
+    //Destroy bullet if it hits the bottom or top 
+    else if(other.CompareTag("BottomBorder") || other.CompareTag("TopBorder")) {
         Destroy(gameObject); //destroy bullet
     }
    }
