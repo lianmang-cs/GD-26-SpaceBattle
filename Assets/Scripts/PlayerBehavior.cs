@@ -8,16 +8,9 @@ public class PlayerBehavior : MonoBehaviour
     public float max; 
     public float AudioVolume; 
 
-    public BulletBehavior bullet; 
+    public BulletBehavior playerBullet; 
     public Transform launchOff; 
     public AudioClip shootAudio;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -47,7 +40,7 @@ public class PlayerBehavior : MonoBehaviour
         if (Keyboard.current.spaceKey.wasPressedThisFrame) {
             //shooting audio
             AudioSource.PlayClipAtPoint(shootAudio, transform.position, AudioVolume); 
-            Instantiate(bullet, launchOff.position, transform.rotation);
+            Instantiate(playerBullet, launchOff.position, transform.rotation);
 
         }
 

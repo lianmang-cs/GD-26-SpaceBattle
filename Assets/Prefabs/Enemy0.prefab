@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2072311354468142848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2651884555557374157}
+  m_Layer: 0
+  m_Name: eLaunchOff
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2651884555557374157
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072311354468142848}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.021, y: -0.282, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4186718299221626726}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5368913111002456881
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,7 +43,7 @@ GameObject:
   - component: {fileID: 4346747250169620360}
   - component: {fileID: 6309347563953312791}
   - component: {fileID: 4172072286064625515}
-  - component: {fileID: -6924580965447322152}
+  - component: {fileID: 7550803092545804729}
   m_Layer: 0
   m_Name: Enemy0
   m_TagString: Enemy
@@ -32,7 +63,8 @@ Transform:
   m_LocalPosition: {x: -3.23, y: 1.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2651884555557374157}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4346747250169620360
@@ -171,7 +203,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-6924580965447322152
+--- !u!114 &7550803092545804729
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,6 +212,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 5368913111002456881}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd1973f906bea49ae85c27db5cc4e022, type: 3}
+  m_Script: {fileID: 11500000, guid: 090c373dcf608463f8b19107c728a71b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyBehavior
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyLaunchOff
+  enemyBullet: {fileID: -4474603561582840081, guid: e00fd0aaed9b44059b97a79d4037922d, type: 3}
+  launchOff: {fileID: 2651884555557374157}
