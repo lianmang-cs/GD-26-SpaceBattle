@@ -3059,6 +3059,14 @@ PrefabInstance:
       value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 1784001113726818993, guid: aa359a8741921475a8f1bfc234033058, type: 3}
+      propertyPath: max
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1784001113726818993, guid: aa359a8741921475a8f1bfc234033058, type: 3}
+      propertyPath: min
+      value: -0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1784001113726818993, guid: aa359a8741921475a8f1bfc234033058, type: 3}
       propertyPath: enemyBullet
       value: 
       objectReference: {fileID: 3315552691948061565, guid: e00fd0aaed9b44059b97a79d4037922d, type: 3}
